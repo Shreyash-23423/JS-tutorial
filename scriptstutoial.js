@@ -85,3 +85,69 @@
 // ternary operator
 
 // age >= 18 ? console.log("Yes") : console.log("No");
+
+
+
+
+// // // loops // // //
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("Bankai",i);
+// }
+
+// // calculate sum of n natural numbers
+// let n=5;
+// let sum=0;
+// for( i=1 ;i<=n;i++){
+//     sum = sum+i;
+// }
+// console.log("Sum of first", n, "natural numbers is:", sum);
+// console.log("Loop ended");
+
+// // while loop //
+// let i=1;
+// while(i<=5){
+//     console.log("bankai");
+//     i++;
+// }
+
+// // // do while loop // //
+// let i =1;
+// do {
+//     console.log("bankai");
+//     i++;
+// } while (i <= 5);
+
+// // // for of loop // //
+// let str = "bankai"
+// for(let i of str){
+//     console.log(i);
+// }   
+
+// let str = "bankai"
+// let size=0;
+// for(let i of str){
+//     console.log(i);
+//     size++;
+// }
+// console.log("Size of the string is:", size);
+
+
+// // // for in loop // //
+// let student ={
+//     name: "John",
+//     age: 21,
+//     grade: "A"
+// }
+// for(let key in student){
+//     console.log(key, ":", student[key]);
+// }
+
+
+// // // strings / //
+// let str = "Hello, World!";
+// console.log(str[2]);
+
+// // template literals // //
+// let specialstring = `this is a special string  ${1+2+3}`;
+// console.log(specialstring);
