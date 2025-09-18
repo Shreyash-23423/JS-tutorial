@@ -151,3 +151,68 @@
 // // template literals // //
 // let specialstring = `this is a special string  ${1+2+3}`;
 // console.log(specialstring);
+
+// // // // methods  in strings//
+//  let str1 = "   getsuga tenshou";
+//  let str2 = "bankai";
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// // console.log(str.trim());
+// console.log(str1.slice(3, 8));
+// console.log(str1.replace("tenshou", "bankai"));
+// console.log(str1.includes("getsuga"));
+// console.log(str1.charAt(5));
+// console.log(str1.concat(str2));
+
+
+// // // chp 4 arrays // //
+// let  marks = [90, 80, 70, 60, 50];
+// console.log(marks);
+// console.log(marks.length);
+
+// let heroes = ["Ichigo", "Naruto", "Goku"];
+// console.log(heroes);
+// console.log(heroes.length);
+// console.log(heroes[1]);
+// heroes[1] = "Sasuke";
+// console.log(heroes);
+
+// // usingfor loop to iterate through array
+// for (let i = 0; i < heroes.length; i++) {
+//     console.log(heroes[i]);
+// }
+
+// // // using for of loop to iterate through array
+// for (let hero of heroes) {
+//     console.log(hero);
+// }
+
+
+// // // array methods // //
+// let vegetables = ["carrot", "broccoli", "spinach"];
+// vegetables.push("potato");
+// vegetables.push("pumpkin");
+// console.log(vegetables);
+// vegetables.pop();
+// console.log(vegetables);
+// console.log(vegetables.toString());
+
+// let fruits = ["apple", "banana", "orange"];
+// let all = vegetables.concat(fruits);
+// console.log(all);
+// fruits.unshift("grape", "mango");
+// console.log(fruits);
+// fruits.shift();
+// // console.log(fruits);
+// console.log(vegetables.slice(1, 3));
+
+// // add element
+// console.log(fruits.splice(1, 0, "kiwi", "pear"));
+// console.log(fruits);
+
+// // delete elements
+// console.log(fruits.splice(2, 2));
+// console.log(fruits);
+
+// repalace elements
+// console.log(fruits.splice(1, 2, "peach", "plum"));

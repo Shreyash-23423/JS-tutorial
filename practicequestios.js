@@ -39,3 +39,50 @@
 //     userguess = prompt("you entered the wrong number. Guess again:");
 // }
 // console.log("Congratulations! You guessed the correct number.");
+
+
+// // // question 5
+// let fullName = prompt("Enter your full name:");
+// let str1= fullName.trim();
+// let str2 = str1.length;
+// console.log("@"+ str1 + str2 );
+
+// //  // question 6
+// let total = 0;
+// let marks = [90, 68, 70, 60, 50];
+// for (let val of marks) {
+//     total += val;
+// }
+// let average = total / marks.length;
+// console.log("Average marks:", average);
+
+
+
+// // question 7
+// let i=0;
+ let items =[200, 300, 400, 500, 600];
+// for( let val of items){
+//     console.log(`Item at index ${i}: ${val}`);
+//     let offer= val/10;
+//     items[i]= items[i]  - offer;
+//    console.log(`Price after 10% discount: ${items[i]}`);
+//     i++;
+// }
+
+
+// //or
+
+// for (let i = 0; i < items.length; i++) {
+//     let offer = items[i] / 10;
+//     items[i] = items[i] - offer;
+//     console.log(`Price after 10% discount: ${items[i]}`);
+// }
+
+// // // question 8
+// let company = ["Google", "Facebook", "Amazon", "Apple", "Microsoft"];
+// company.shift();
+// console.log(company);   
+// company.splice(2,1, "Oracle");
+// console.log(company);
+// company.push("Tesla");
+// console.log(company);
