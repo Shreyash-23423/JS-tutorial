@@ -216,3 +216,57 @@
 
 // repalace elements
 // console.log(fruits.splice(1, 2, "peach", "plum"));
+
+
+// // // functions // //
+// function greet(name) {
+//     console.log("Hello, " + name + "!");
+// }
+// greet("Alice");
+// // greet("Bob");
+
+// function add(a, b) {
+//     console.log(a + b);
+// }
+// add(5, 10);
+// add(20, 30);
+
+// // arrow function
+// const multiply = (a, b) => {
+//     console.log(a * b);
+// }
+// multiply(5, 10);
+// multiply(20, 30);
+
+//  // /// for each loop // //
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.forEach( function (num) {
+//     console.log(num);
+// });
+
+// // map method
+// let numbers = [1, 2, 3, 4, 5];
+// let newarr = numbers.map(function (num) {
+//     return num * num;
+// });
+// console.log(newarr);
+
+// // // filter method
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let even = numbers.filter( (num) => {
+//      return num % 2 == 0; });
+// console.log(even);
+
+// // // reduce method
+//  let numbers = [1, 2, 3, 4, 5];
+// numbers.reduce( (accumulator, current) => {
+//     return accumulator + current;
+// }, 0);
+// console.log(numbers);
+
+// randomnumbers= [5,4,6,8,8,8,7,9,3,2,1];
+// const output=randomnumbers.reduce((previous,current)=>{
+//     return previous>current ? previous:current;
+// },0);
+// console.log(output);
+

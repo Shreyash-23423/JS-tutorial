@@ -86,3 +86,58 @@
 // console.log(company);
 // company.push("Tesla");
 // console.log(company);
+
+
+// // // // question 9
+// function countVowels(str) {
+//     let count = 0;
+//     for (let char of str) {
+//         if("aeiouAEIOU".includes(char)) {
+//             count++;
+//         }
+//     }
+//   console.log(count);
+// }
+
+// // // // question 10
+// const countVowels = (str) => {
+//     let count = 0;
+//     for (let char of str) {
+//         if("aeiouAEIOU".includes(char)) {
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+
+
+// // // question 11
+// let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// number.forEach(function(num) {
+//     number=num * num;
+//     console.log(number);
+// });
+
+// // // // question 12
+// let marks =[55,76,78,89,90,45,34,23,67];
+// let passedstudents= marks.filter((mark)=>{
+//     return mark >= 60;
+// });
+// console.log("Passed students:", passedstudents);
+
+// // // // question 13
+// let n=prompt("Enter a number :",);
+// let arr=[];
+// for(i=1; i<=n; i++){
+//     arr[i-1]=i;
+// }
+// let sum =arr.reduce((accumulator, current)=>{
+//     return accumulator + current;
+// }, 0);
+// console.log("Sum of first " + n + " natural numbers is: " + sum);
+
+// let product = arr.reduce((accumulator, current) => {
+//     return accumulator * current;
+// }, 1);
+// console.log("Product of first " + n + " natural numbers is: " + product);
+
