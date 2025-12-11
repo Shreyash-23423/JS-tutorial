@@ -1,8 +1,8 @@
  // global variables
 // // arithmetic operators
 // let a = 10;
-// let b = 2;
-// console.log("a+b=", a + b);
+// console.log(a++)
+// console.log(a++)
 // console.log("a-b=", a - b);
 // console.log("a*b=", a * b);
 // console.log("a/b=", a / b);
@@ -263,6 +263,13 @@
 //     return accumulator + current;
 // }, 0);
 // console.log(numbers);
+ 
+//  to calculate maximum number in array using reduce method
+// let numbers1  = [1, 2, 3, 4, 5];
+// const output1=numbers1.reduce((previous,current)=>{
+//     return previous>current ? previous:current;
+// });
+// console.log(output1); 
 
 // randomnumbers= [5,4,6,8,8,8,7,9,3,2,1];
 // const output=randomnumbers.reduce((previous,current)=>{
@@ -270,3 +277,40 @@
 // },0);
 // console.log(output);
 
+
+
+// // dom manipulation
+// let heading = document.getElementsByClassName("heading-class");
+// console.dir(heading);
+// console.log(heading);
+
+// let button = document.getElementsByClassName("butooon");
+// console.dir(button);
+// console.log(button);
+
+// let paras = document.getElementsByTagName("p");
+// console.dir(paras);
+// console.log(paras);
+
+// // query selector
+
+// let firstelement = document.querySelector("p");
+// console.dir(firstelement);
+
+// let allelements = document.querySelectorAll("p");
+// console.dir(allelements);
+
+// let classelements = document.querySelectorAll(".heading-class");
+// console.dir(classelements); 
+
+// console.dir(document.body.firstChild);
+
+
+// let div = document.querySelector("div");
+// console.dir(div);
+// div.innerText = "This is changed text using JavaScript";
+
+// let heading = document.querySelector("h1");
+// console.dir(heading);
+
+// heading.innerText="new heading set using javascript";  

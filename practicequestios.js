@@ -141,3 +141,19 @@
 // }, 1);
 // console.log("Product of first " + n + " natural numbers is: " + product);
 
+
+
+// // // question 14
+// let practiceheading = document.querySelector("h2");
+// console.dir(practiceheading);
+// practiceheading.innerText = practiceheading.innerText + "from apna college student";
+
+// // // // question 15
+// let divs = document.querySelectorAll("div");
+// console.log(divs[0]);
+// let idx =1;
+// for (div of divs){
+//     div.innerText = "This is div number " + idx;
+//     idx++;
+// }   
+
