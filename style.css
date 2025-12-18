@@ -1,7 +1,40 @@
-.box{
-    height: 100px;
+#box{
+    height: 250px;
     width: 100px;
     background-color: red;
     margin: 10px;
     text-align: center;
+    border: black 2px solid;
 }
+
+/* for parctice question 17 
+.content{
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+.newclass{
+    background-color: yellow;
+    border: blue 2px solid;
+} */
+
+/* 
+div{
+    height: 100px;
+    width: 200px;
+    border: black 2px solid;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 40px;
+    background-color: lightskyblue;
+} */
+/* 
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+} */

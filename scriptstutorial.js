@@ -314,3 +314,199 @@
 // console.dir(heading);
 
 // heading.innerText="new heading set using javascript";  
+
+// // attributes
+// let div = document.querySelector("div");
+// console.dir(div);
+
+// console.log(div.getAttribute("id"));
+// console.log("id");
+
+// let para= document.querySelector("p");
+// console.log(para.setAttribute("class","newclass"));
+
+// // to access the stle of an element
+// let div =document.querySelector("div");
+// div.style.backgroundColor="blue";   
+// div.style.fontSize="20px";
+// div.innerText="style changed using javascript";
+
+// // insert elements 
+// let newpara = document.createElement("p");
+// newpara.innerText = "this is a new paragraph created using javascript";
+// console.log(newpara);
+
+// let div = document.querySelector("div");
+// div.append(newpara);
+
+// let newheading = document.createElement("h3");
+// newheading.innerText = "this is a new heading created using javascript";
+// console.log(newheading);
+//  document.querySelector("body").prepend(newheading);
+
+// let para = document.querySelector("p");
+// para.remove();
+
+// // / / events // //
+// let btn1 = document.querySelector("#btn1");
+// btn1.onclick = function () {
+//     alert("Button clicked using JS");
+// let a  = 10;
+// a++;
+// console.log(a);
+// }
+
+// let btn2 = document.querySelector("#btn2");
+// btn2.ondblclick =  (evt) =>{   
+// console.log(evt);
+// console.log(evt.type);
+// console.log(evt.target);
+// console.log(evt.clientX);
+// console.log(evt.clientY);
+// };
+
+// let box = document.querySelector("#box");
+// box.onmouseover = function () {
+//     console.log("Mouse over using JS");
+// }
+
+
+// btn1.addEventListener("click", () => {
+//     console.log("Button clicked using event listener handler1");
+// });
+// btn1.addEventListener("click", () => {
+//     console.log("Button clicked using event listener handler2");
+// });
+// const handler3 = () => {
+//     console.log("Button clicked using event listener handler3");
+// };
+// btn1.addEventListener("click", handler3);
+
+
+// btn1.addEventListener("click", () => {
+//     console.log("Button clicked using event listener handler4");
+// });
+
+// btn1.removeEventListener("click", handler3);            
+    
+
+// //    clases and objects
+// const student = {
+//     name: "John",
+//     marks: 95,
+//     printmarks: function () {
+//         console.log("marks:", this.marks);
+//     }
+//     };
+
+// //prototype
+// const employee = {
+//     calctax: function () {
+//         console.log("tax rate is 10%"); 
+//     }
+// };
+
+// const emp1 = {
+//     salary: 50000,
+// }
+// const emp2 = {
+//     salary: 60000,
+// }   
+// const emp3 = {
+//     salary: 70000,
+//     calctax: function () {
+//         console.log("tax rate is 20%");
+//     }
+// }
+// emp1.__proto__ = employee;
+// emp2.__proto__ = employee;
+// emp3.__proto__ = employee;
+// emp1.calctax();
+// emp2.calctax();
+// emp3.calctax();
+
+// clases
+// class HundaiCar {
+//     start() {
+//         console.log("Hundai car started");
+//     }       
+//     stop() {                
+//         console.log("Hundai car stopped");
+//     }   
+//     setspeed(speed) {
+//         this.speed = speed;
+//         console.log("Speed set to", speed);
+//     }
+// }
+
+// let Creta = new HundaiCar();
+// Creta.setspeed("60");
+
+// class toyotaCar {
+//     constructor(color,mileage) {
+//         console.log("Toyota car created");
+//         this.color = color;
+//         this.mileage = mileage;
+//     }
+//     start() {
+//         console.log("Toyota car started");
+//     }           
+//     stop() {                
+//         console.log("Toyota car stopped");
+//     }   
+// }
+
+// let innova = new toyotaCar("red", 15);
+// console.log("Innova ");
+// let fortuner = new toyotaCar("black", 20);
+// console.log("Fortuner ");
+
+
+// // inhertance
+
+// class person {
+//     constructor( name) {
+//         this.name = name;
+//         this.species = "Homo Sapiens";
+//     }
+
+//     eat() {
+//         console.log("person is eating");
+//     }   
+//     sleep() {
+//         console.log("person is sleeping");
+//     }
+//     work() {
+//         console.log("do nothing");
+//     }
+// }
+
+// class student extends person {
+//     study() {
+//         console.log("student is studying");
+//     }
+// }
+
+// class enginer extends person {
+//     constructor(name) {
+//         super(name);
+//         this.branch = "Computer Science";
+//     }
+//     work() {
+//             super.eat(); // this will call the method of parentclass
+//         console.log("enginer is working");
+//     } 
+  
+// }
+
+// let stud1 = new student("John");
+// stud1.eat();
+// stud1.sleep();
+// stud1.study();
+
+// let eng1 = new enginer("Alice");
+// eng1.eat();
+// eng1.sleep();
+// eng1.work(); // here work method of enginer class is called due to method overriding
+
+

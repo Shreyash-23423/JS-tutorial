@@ -157,3 +157,67 @@
 //     idx++;
 // }   
 
+// /// // question 16
+// let newbutton = document.createElement("button");
+// newbutton.innerText = "Click Me";
+// newbutton.style.backgroundColor = "blue";
+// newbutton.style.color = "white";
+// console.log(newbutton);
+// let body = document.querySelector("body");
+// body.prepend(newbutton);    
+
+// // // // question 17
+
+//  let para = document.querySelector("p");
+// // para.setAttribute("class", "content new class");  ye overwrite karta hai
+
+// para.classList.add("newclass"); 
+
+// // // // question 18
+// let modebtn = document.querySelector("#Theme");
+// let body = document.querySelector("body");
+// let currentmode = "light";
+
+// modebtn.addEventListener("click", () => {
+//     if (currentmode === "light") {
+//         currentmode = "dark";
+//         body.classList.add("dark");
+//         body.classList.remove("light");
+//     } else {
+//      currentmode = "light";
+//      body.classList.add("light");
+//         body.classList.remove("dark");
+//     }
+//     console.log("Current mode is:", currentmode);
+//     console.log("you are trying to change the theme");
+// });
+
+// // // question 19
+// let Data = "secret information";
+
+// class user {
+//     constructor(name, email){
+//         this.name = name;
+//         this.email = email;
+//     }
+//     viewdata(){
+        
+//       console.log("data= ",Data);}
+// }
+
+//  class admin extends user {
+//     constructor(name, email){
+//         super(name, email);
+//     }
+//     editdata(newdata){
+//         Data = "some new information";
+//     }
+// }
+// let user1 = new user("Alice", "alice@example.com");
+// let user2 = new user("Bob", "bob@example.com");
+
+// let teacher1 = new user("Mr. Smith", "smith@example.com");
+
+// let admin1 = new admin("Admin", "admin@example.com");
+// user1.viewdata();
+// user2.viewdata();
