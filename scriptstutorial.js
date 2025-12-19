@@ -510,3 +510,54 @@
 // eng1.work(); // here work method of enginer class is called due to method overriding
 
 
+// error handling
+// let a = 10;
+// let b = 30;
+// console.log("a=", a);
+// console.log("b=", b);
+// console.log("a+b=", a + b);
+// try{
+//     console.log("a+b=", a + c); //error
+// }catch(err){
+//     console.log(err)
+// }
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+// console.log("a+b=", a + b);
+
+
+// asynchronous 
+// console.log("one")
+// console.log("two")
+
+// setTimeout(()=>{
+//     console.log("hello");
+// },5000);
+// console.log("three")
+// console.log("four")
+
+// // call back
+// function sum(a,b){
+//     console.log(a+b);
+// }
+
+// function calculator(a,b,sumCallback){
+//     sumCallback(a,b);
+// }
+// calculator(1,2,sum);
+
+// function getdata(dataId,getnextdata){
+//     setTimeout(()=>{
+//     console.log("data",dataId);
+//     if(getnextdata){
+//     getnextdata();
+//     }
+// },2000);
+// }
+
+// getdata(1,()=>{  // this is callback hell 
+//   getdata(2,()=>{
+// getdata(3)});
+// });
+
+
