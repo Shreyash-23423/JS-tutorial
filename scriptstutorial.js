@@ -560,4 +560,147 @@
 // getdata(3)});
 // });
 
+//using promise
+// const getPromise =() =>{
+//   return  new Promise((resolve,reject)=>{
+//     console.log("i am a promise");
+// // resolve("123");
+// reject("network error");
+// });
+// };
 
+
+// let promise = getPromise();
+// promise.then((res)=>{
+//     console.log("promise fulfilled",res);
+// });
+
+// promise.catch((err)=>{
+//     console.log("Recjected",err);
+// });
+// function getdata(dataId,getnextdata){
+//     return new Promise ((resolve,reject)=>{
+    
+//      setTimeout(()=>{
+//      console.log("data",dataId);
+//      resolve("success");
+//      if(getnextdata){
+//      getnextdata();
+//      }
+//  },5000);
+// });
+// }
+
+
+
+// promise chain
+// function asyncfunc1(){
+//   return new Promise ((resolve,reject)=>{
+//     setTimeout(()=>{
+//        console.log(" data1");
+//        resolve("success");
+//     },4000);
+//     });
+// }
+// console.log("fetching data1");
+// let p1 = asyncfunc1();
+// p1.then((res)=>{
+// console.log("fetching data2");
+// let p2 = asyncfunc2();
+// p2.then((res)=>{});
+
+// });
+
+// function asyncfunc2(){
+//   return new Promise ((resolve,reject)=>{
+//     setTimeout(()=>{
+//        console.log(" data2");
+//        resolve("success");
+//     },4000);
+//     });
+// }
+
+
+// solving the previous callbackhell problem using chainpromise
+// function getdata(dataId,){
+//   return new Promise ((resolve,reject)=>{
+//     setTimeout(()=>{
+//     console.log("data",dataId);
+//     resolve("success");
+   
+//   },3000);
+// });
+// }
+
+// getdata(1)
+// .then((res)=>{
+//   return getdata(2);
+// })
+// .then((res)=>{
+//     return getdata(3);
+
+// })
+// .then((res)=>{
+//   console.log(res);
+// });
+
+// // async and await
+// function api(){
+//   return new Promise ((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("wheather data");
+//       resolve(200);
+//     },2000);
+//   });
+// }
+
+// async function getwheatherdata() {
+//   await api();
+//   await api();
+// }
+
+
+// //  solving it with the async await
+//  function getdata(dataId){
+//    return new Promise ((resolve,reject)=>{
+//     setTimeout(()=>{
+//      console.log("data",dataId);
+//      resolve("success");
+ 
+//    },3000);
+//  });
+//  }
+
+//  async function getalldata(){
+//   await getdata(1);
+//   console.log("gettingdata1");
+//   await getdata(2);
+//     console.log("gettingdata2");
+//   await getdata(3);
+//   console.log("gettingdata3");
+
+// }
+
+// fetch apis
+
+const URL = "https://meowfacts.herokuapp.com/";
+const factpara = document.querySelector("#fact");
+const btn = document.querySelector("#btn");
+
+const getFacts = async () => {
+  try {
+    console.log("getting data .....");
+
+    const response = await fetch(URL);
+    const data = await response.json();
+
+    // correct way to access data
+    factpara.innerText = data.data[0];
+
+  } catch (error) {
+    console.error("Error fetching fact:", error);
+    factpara.innerText = "Failed to load cat fact 😿";
+  }
+};
+
+btn.addEventListener("click", getFacts);
